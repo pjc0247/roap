@@ -17,8 +17,9 @@ end
 module FilterExtension
   extend Roap::AttributeBase
   
-  on /throw-if-not=(?<expr>.*)/ do |_super, md, *args|
-    if args[0] == md[:expr]
+  on /throw-if-not (?<key>.*)=>(?<value>.*)/ do |_super, md, *args|
+    idx = _super.parameters.index([:req, md[:key].to_sym])
+    if args[idx] == md[:value]
       _super.call *args
     else
       throw "invalid argument #{args[0]}, expected #{md[:expr]}"
@@ -34,13 +35,13 @@ class Foo
     puts "foo(#{a})"
   end
   
-  #throw-if-not=hello
+  #throw-if-not msg=>hello
   def bar msg
     puts "bar(#{msg})"
   end
   
   #chain
-  #throw-if-not=multi-attributes-test
+  #throw-if-not msg=>multi-attributes-test
   def zoo msg
     puts "zoo(#{msg})"
   end
