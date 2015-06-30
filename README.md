@@ -39,6 +39,12 @@ class Foo
     puts "bar(#{msg})"
   end
   
+  #chain
+  #throw-if-not=multi-attributes-test
+  def zoo msg
+    puts "zoo(#{msg})"
+  end
+  
   include ChainExtension
   include FilterExtension
 end
