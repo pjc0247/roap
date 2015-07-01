@@ -5,6 +5,7 @@
 * _super로 전달되는 method가 변경될 때
   (예: bind)
   변경된 메소드에 pure 메소드를 구현해야 함<br>
+
  ```rb
       attr /foo/ do |base, method, md, rule|
         # ....
