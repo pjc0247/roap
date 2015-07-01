@@ -1,0 +1,9 @@
+Gem::Specification.new do |s|
+  s.name        = "roap"
+  s.version     = "0.0.1"
+  s.summary     = "DATDATDAT"
+  s.description = "DATADATA"
+  s.authors     = ["matsumlki"]
+  s.email       = 'pmnxis@naver.com'
+  s.files       = ['{lib}/**/*']
+end
