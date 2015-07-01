@@ -8,6 +8,8 @@ module FooExtension
   
   #static
   on /test-me (?<should>.*)/ do |klass, method, md|
+    next if not IS_TESTMODE # 테스트 실행 모드에서만 작동되어야 함
+    
     should = eval(md[:should])
     
     if should != klass.method(method).call
