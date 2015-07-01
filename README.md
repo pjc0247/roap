@@ -1,6 +1,18 @@
 # roap
 Aspect Oriented Programming for Ruby
 
+Concept
+----
+* AOP for Ruby
+* 주석을 이용한 메소드 Attribute 정의
+  * 주석은 언어 문법에 구애받지 않기 때문에 자유로운 활용 가능
+
+Goals
+----
+* 주석과 소스의 하이브리드
+  * 주석에 작성된 값을 소스에서 활용
+  * 메소드의 각 파라미터들에 대한 기본값, 제약 사항등을 주석에다도 적고, 소스에 또 적는건 멋지지 않다는 생각에서
+
 Usage
 ----
 ```rb
@@ -60,3 +72,8 @@ a.foo(1)
 a.bar("hello")
 a.bar("bye") # error
 ```
+
+Issues
+----
+* 패치되기 전의 메소드와 패치 후의 메소드의 method.parameters의 값이 다름
+  * roap가 적용된 이후의 메소드는 parameters가 *p로 변경됨
