@@ -15,6 +15,36 @@ Goals
 
 Usage
 ----
+확장 어트리뷰트를 정의할 모듈을 작성합니다.
+```rb
+module FooExtension
+  extend Roap::AttributeBase
+  
+  # on
+  #   
+  #
+  # /i-am-a-milkman/
+  #    
+  #
+  # Arguments
+  #   - _super  : 
+  #   - md      : 
+  #   - *args   :
+  #
+  # Return
+  #   
+  on /i-am-a-milkman/ do |_super, md, *args|
+    puts "before"
+      _super *args
+    puts "after"
+    
+    "return_value"
+  end
+end
+```
+
+Example
+----
 ```rb
 module ChainExtension
   extend Roap::AttributeBase
