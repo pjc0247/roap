@@ -21,18 +21,19 @@ module FooExtension
   extend Roap::AttributeBase
   
   # on
-  #   
+  #   on 을 이용해서 Attribute를 정의할 수 있습니다.
   #
   # /i-am-a-milkman/
-  #    
+  #    주석에 대해 매칭시킬 정규식입니다.
   #
   # Arguments
-  #   - _super  : 
-  #   - md      : 
-  #   - *args   :
+  #   - _super  : 변경되기 이전의 메소드입니다.
+  #   - md      : 정규식에 매칭된 매치데이터입니다.
+  #   - *args   : 원래 메소드에 넘어온 인자들입니다.
   #
   # Return
-  #   
+  #   Ruby 문법 상 블록에서는 return 키워드를 사용할 수 없기 때문에
+  #   블록의 가장 마지막에 리턴값을 위치시키는 방법으로 값을 리턴할 수 있습니다.
   on /i-am-a-milkman/ do |_super, md, *args|
     puts "before"
       _super *args
