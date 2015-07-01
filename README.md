@@ -46,6 +46,7 @@ end
 Example
 ----
 ```rb
+# chain 어트리뷰트를 통해 자동으로 메소드 체인을 구현해주는 확장 모듈
 module ChainExtension
   extend Roap::AttributeBase
   
