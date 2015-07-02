@@ -43,6 +43,8 @@ module FooExtension
   end
 end
 ```
+각각의 Attribute들은 실행 순서가 보장되지 않습니다.<br>
+따라서 항상 다른 어트리뷰트에 종속되지 않고 독립적인 로직을 작성해야 합니다.
 
 Example
 ----
