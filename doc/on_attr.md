@@ -9,12 +9,12 @@
 
  ```rb
  attr /foo/ do |base, method, md, rule|
-   # ....
-   bound_method = method.bind some_binding
-   bound_method.define_singleton_method :pure do
-     method.pure
-   end
-   # ....
+    # ....
+    bound_method = method.bind some_binding
+    bound_method.define_singleton_method :pure do
+      method.pure
+    end
+    # ....
  end
   ```
 * on의 block에서 익셉션이 발생할 수 있으므로 캐치 후 디버그 정보를 출력
