@@ -109,13 +109,6 @@ a.bar("hello")
 a.bar("bye") # error
 ```
 
-Issues
-----
-* 패치되기 전의 메소드와 패치 후의 메소드의 method.parameters의 값이 다름
-  * roap가 적용된 이후의 메소드는 parameters가 *p로 변경됨
-  * -> _super.pure 구현으로 해결 / _super.pure은 다른 훅들에 의해 dirty 상태가 되기 전의 바닐라 메소드를 리턴한다.
-
-
 DAT
 ----
 * https://github.com/pjc0247/roap_test_helper
