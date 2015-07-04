@@ -1,8 +1,7 @@
 Digest
 ====
 
-Ruby stdlib의 Digest모듈을 roap에서 사용할 수 있도록 제작된 확장입니다.<br>
-[Ruby Digest](http://ruby-doc.org/stdlib-2.1.0/libdoc/digest/rdoc/Digest.html)
+Ruby stdlib의 [Digest](http://ruby-doc.org/stdlib-2.1.0/libdoc/digest/rdoc/Digest.html)모듈을 roap에서 사용할 수 있도록 제작된 확장입니다.<br>
 
 
 sha1-digested param_name
