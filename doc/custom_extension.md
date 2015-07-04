@@ -13,6 +13,9 @@ module GreetingExtension
   end
 end
 ```
+
+GreetingExtension을 사용할 클래스를 제작합니다.<br>
+기본적으로는 로그인 기능을 제공하는 클래스로, GreetingExtension을 이용하여, 이용자가 로그인 할 때 마다 인사 메세지를 출력하는 기능을 주입합니다.
 ```rb
 class LoginService
 
