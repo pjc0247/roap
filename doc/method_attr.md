@@ -1,5 +1,6 @@
 
 메소드 내부에서 \__attr_name__을 사용하여 주석의 각 항목에 접근할 수 있습니다.<br>
+(document-style-attribute만 가져올 수 있습니다.)
 
 ```rb
 # @parameters
