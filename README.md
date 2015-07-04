@@ -1,6 +1,8 @@
 # roap
 Aspect Oriented Programming for Ruby
 
+* [Documents](doc)
+
 Concept
 ----
 * AOP for Ruby
