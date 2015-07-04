@@ -1,3 +1,6 @@
+주석 스타일 가이드
+====
+
 document-style-attribute
 ----
 * 모든 인덴트는 스페이스를 사용한다.
