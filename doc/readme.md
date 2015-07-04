@@ -8,6 +8,7 @@ Documents
 가이드
 ----
 * [on_attr](on_attr.md)
+* [확장 어트리뷰트 만들기](custom_extension.md)
 * [주석 스타일 가이드](comment_style.md)
 
 내장된 확장 기능들
