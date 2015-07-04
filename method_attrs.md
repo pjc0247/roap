@@ -24,7 +24,7 @@ def foo
 end
 ```
 
-\__comments는 전체 주석을 반환합니다.
+\__comments__는 전체 주석을 반환합니다.
 
 ```rb
 # @foo
