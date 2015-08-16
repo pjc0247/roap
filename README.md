@@ -111,6 +111,6 @@ a.bar("bye") # error
 
 DAT
 ----
-* https://github.com/pjc0247/roap_test_helper
-* https://github.com/pjc0247/roap_rpc
-* https://github.com/pjc0247/roap_vd
+* [roap_test_helper](https://github.com/pjc0247/roap_test_helper)
+* [roap_rpc](https://github.com/pjc0247/roap_rpc)
+* [roap_vd](https://github.com/pjc0247/roap_vd)
