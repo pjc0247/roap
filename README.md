@@ -5,6 +5,12 @@ Aspect Oriented Programming for Ruby
 
 * [Documents](doc)
 
+Installation
+----
+```
+gem install roap
+```
+
 Concept
 ----
 * AOP for Ruby
